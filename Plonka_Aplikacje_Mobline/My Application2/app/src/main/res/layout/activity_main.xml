@@ -13,8 +13,8 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:ems="10"
+        android:hint="Wpisz wiadomość"
         android:inputType="text"
-        android:text="Wpisz Wiadomość"
         app:layout_constraintEnd_toStartOf="@+id/button"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -27,9 +27,25 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
+        android:onClick="sendMassage()"
         android:text="Wyślij wiadomość"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="58dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="159dp"
+        android:layout_marginTop="224dp"
+        android:layout_marginEnd="194dp"
+        android:background="#B5A0DA"
+        android:hint="@strnig/text"
+        android:text="Moj pierwszy tekst"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
